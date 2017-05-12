@@ -1,22 +1,17 @@
-<nav class="navbar" style="margin-bottom: 0;">
-    <div class="container">
-
-        <div class="navbar-collapse collapse" id="navbar">
-            <div class="row">
-                <div class="col-md-2 col-sm-4">
-                    <dx-menu #menu [dataSource]="products" displayExpr="name" [showFirstSubmenuMode]="showFirstSubmenuModes" orientation="horizontal"
-                        submenuDirection="auto" [hideSubmenuOnMouseLeave]="false" (onItemClick)="itemClick($event)">
-                    </dx-menu>
-                </div>
-                <div class="col-md-5 col-sm-4 text-center"><a href="#" class="navbar-brand">UPoint</a></div>
-                <div class="col-md-5 col-sm-12">
-                    <dx-menu #menu [dataSource]="auxNavItems" displayExpr="name" [showFirstSubmenuMode]="showFirstSubmenuModes" orientation="horizontal"
-                        submenuDirection="auto" [hideSubmenuOnMouseLeave]="false" (onItemClick)="itemClick($event)">
-                    </dx-menu>
-                </div>
-            </div>
-
-        </div>
-        <!--/.nav-collapse -->
+<div class="aux-nav-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-4">
+        <dx-menu #menu [dataSource]="products" displayExpr="name" [showFirstSubmenuMode]="showFirstSubmenuModes" orientation="horizontal"
+          submenuDirection="auto" [hideSubmenuOnMouseLeave]="false" (onItemClick)="itemClick($event)">
+        </dx-menu>
+      </div>
+      <div class="col-md-5 col-sm-4 text-center"><a href="#" class="">UPoint</a></div>
+      <div class="col-md-5 col-sm-12">
+        <dx-menu #menu [dataSource]="auxNavItems" displayExpr="name" [showFirstSubmenuMode]="showFirstSubmenuModes" orientation="horizontal"
+          submenuDirection="auto" [hideSubmenuOnMouseLeave]="false" (onItemClick)="itemClick($event)">
+        </dx-menu>
+      </div>
     </div>
-</nav>
+  </div>
+</div>

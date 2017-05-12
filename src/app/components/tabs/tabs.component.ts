@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import notify from 'devextreme/ui/notify';
 import { Company, Service } from './tabs.service';
 
 @Component({
@@ -15,5 +15,13 @@ export class TabsComponent {
     constructor(service: Service) {
         this.companies = service.getCompanies();
         this.itemCount = this.companies.length;
+    }
+
+    checkAvailable(e, companies) {
+        var type = "success",
+            text = companies.CompanyName +
+            (e.value ? " is available" : " is not available");
+
+        notify(text, type, 600);
     }
 }
