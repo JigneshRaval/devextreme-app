@@ -1,0 +1,42 @@
+/deep/ .form > div {
+    display: inline-block;
+}
+/deep/ .form > div:first-child {
+    width: 420px;
+}
+/deep/ .label {
+    font-size: 22px;
+}
+/deep/ #product-details {
+    margin-top: 20px;
+    vertical-align: top;
+    width: 400px;
+    height: 400px;
+}
+/deep/ #product-details > img {
+    height: 300px;
+    width: 400px;
+}
+/deep/ #product-details > .name {
+    text-align: center;
+    font-size: 20px;
+}
+/deep/ #product-details > .price {
+    text-align: center;
+    font-size: 24px;
+}
+/deep/ .dark #product-details > div {
+    color: #f0f0f0;
+}
+/deep/ .options {
+    padding-top: 5px;
+    margin-left: 40px;
+    width: 300px;
+    vertical-align: top;
+}
+/deep/ .options > div {
+    margin-top: 25px;
+}
+/deep/ .hidden {
+    visibility: hidden;
+}

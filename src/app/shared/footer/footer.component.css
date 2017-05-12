@@ -1,0 +1,38 @@
+.aonlogo{
+    float:left;
+}
+.aonlogo span{
+    float: right;
+    margin: 5px;
+    color: #333;
+}
+.ah-footer{
+    list-style: none;
+    text-align: right;
+    padding:0;
+    font-size: 13px;
+    margin-top:50px;
+}
+.ah-footer li{
+    display: inline-block;
+    padding:0 8px;
+    color: #1C68BF
+}
+.copyright{
+    font-size:11px;
+    text-align: right;
+    padding:0 8px;
+}
+.ah-footer li[ng-reflect-menu]{
+    cursor: pointer
+}
+
+/deep/ #languages ul {
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+/deep/ #languages ul li a {
+    display: block;
+    padding: 5px 10px;;
+}

@@ -1,0 +1,24 @@
+.primary-bar{
+    background: #e6e6e6;
+    border-bottom: 1px solid #c5c6c7;
+}
+.primary-bar li{
+    float: left
+}
+.primary-bar a{
+    font-size:16px;
+    text-decoration: none;
+    padding:11px 14px;
+    color: #333;
+    display: inline-block;
+    line-height: 34px;
+}
+.primary-bar a.active{
+    background: #fff;
+    border: 1px solid #c5c6c7;
+    border-bottom: #fff;
+    margin-bottom: -1px;
+}
+.primary-bar a:hover{
+    background: #cecece
+}
