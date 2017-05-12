@@ -52,7 +52,7 @@ let employees: Employee[] = [{
     "LastName": "Samuelson",
     "Prefix": "Dr.",
     "Position": "Ombudsman",
-    "Picture": "./assets/images/favorite_flowers_in_august_by_daykiney-d7ye5wc.jpg",
+    "Picture": "./assets/images/image-1.jpg",
     "BirthDate": "1972/09/11",
     "HireDate": "2009/04/22",
     "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing pick-up games.",

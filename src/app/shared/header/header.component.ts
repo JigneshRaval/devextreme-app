@@ -5,6 +5,7 @@ import { Product, AuxNavItem, Service } from './header.service';
 @Component({
     selector: 'ah-header',
     templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css',],
     providers: [Service]
 })
 export class HeaderComponent {
