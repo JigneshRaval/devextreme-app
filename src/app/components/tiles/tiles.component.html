@@ -4,10 +4,11 @@
         <div class="card">
             <img data-holder-rendered="true" src="{{employee.Picture}}" style="height: 180px; width: 100%; display: block;" class="card-img-top">
             <div class="card-block">
-                <h4 class="card-title">{{employee.FirstName}} {{employee.LastName}}</h4>
+                <h3 class="card-title">{{employee.FirstName}} {{employee.LastName}}</h3>
                 <p class="card-text">{{employee.Notes}}</p>
-                <dx-button class="button-info" text="Details" (onClick)="showInfo(employee)">
-                </dx-button>
+                <div class="text-center">
+                    <dx-button class="button-info" text="Details" (onClick)="showInfo(employee)"></dx-button>
+                </div>
             </div>
         </div>
         <br/><br/>
@@ -16,7 +17,7 @@
 </div>
 
 <!-- Popup Window -->
-<dx-popup class="popup" [width]="400" [height]="300" [showTitle]="true" title="{{currentEmployee.FirstName}} {{currentEmployee.LastName}}" [dragEnabled]="false" [closeOnOutsideClick]="true"
+<dx-popup class="popup" [width]="400" [height]="300" [showTitle]="true" title="{{currentEmployee.FirstName}} {{currentEmployee.LastName}}" [dragEnabled]="true" [closeOnOutsideClick]="false"
     [(visible)]="popupVisible">
     <div *dxTemplate="let data of 'content'">
         <p>

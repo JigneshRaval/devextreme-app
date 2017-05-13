@@ -39,7 +39,7 @@ let employees: Employee[] = [{
     "Picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUVP5kZhAZlQjU3sttmDwG9kygpSamrmluYyWDXosUMd0vVMSJ",
     "BirthDate": "1978/01/09",
     "HireDate": "2009/08/11",
-    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing pick-up games.",
+    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing.",
     "Address": "424 N Main St.",
     "StateID": 4
 }, {
@@ -63,7 +63,7 @@ let employees: Employee[] = [{
     "Picture": "./assets/images/image-1.jpg",
     "BirthDate": "1972/09/11",
     "HireDate": "2009/04/22",
-    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing pick-up games.",
+    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing.",
     "Address": "12100 Mora Dr",
     "StateID": 3
 }, {
@@ -87,7 +87,7 @@ let employees: Employee[] = [{
     "Picture": "./assets/images/image-2.jpg",
     "BirthDate": "1972/09/11",
     "HireDate": "2009/04/22",
-    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing pick-up games.",
+    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing.",
     "Address": "12100 Mora Dr",
     "StateID": 7
 },{
@@ -111,7 +111,55 @@ let employees: Employee[] = [{
     "Picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUVP5kZhAZlQjU3sttmDwG9kygpSamrmluYyWDXosUMd0vVMSJ",
     "BirthDate": "1978/01/09",
     "HireDate": "2009/08/11",
-    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing pick-up games.",
+    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing.",
+    "Address": "424 N Main St.",
+    "StateID": 8
+}, {
+    "ID": 9,
+    "FirstName": "Kent",
+    "LastName": "Samuelson",
+    "Prefix": "Dr.",
+    "Position": "Ombudsman",
+    "Picture": "./assets/images/download (1).jpg",
+    "BirthDate": "1972/09/11",
+    "HireDate": "2009/04/22",
+    "Notes": "Sandra is a CPA and has been our controller since 2008. She loves to interact with staff so if you've not met her, be certain to say hi.\r\n\r\nSandra has 2 daughters both of whom are accomplished gymnasts.",
+    "Address": "12100 Mora Dr",
+    "StateID": 4
+}, {
+    "ID": 10,
+    "FirstName": "Kent",
+    "LastName": "Samuelson",
+    "Prefix": "Dr.",
+    "Position": "Ombudsman",
+    "Picture": "./assets/images/image-2.jpg",
+    "BirthDate": "1972/09/11",
+    "HireDate": "2009/04/22",
+    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing.",
+    "Address": "12100 Mora Dr",
+    "StateID": 7
+},{
+    "ID":11,
+    "FirstName": "Sandra",
+    "LastName": "Johnson",
+    "Prefix": "Mrs.",
+    "Position": "Controller",
+    "Picture": "../assets/images/images.jpg",
+    "BirthDate": "1974/11/15",
+    "HireDate": "2005/05/11",
+    "Notes": "Sandra is a CPA and has been our controller since 2008. She loves to interact with staff so if you've not met her, be certain to say hi.\r\n\r\nSandra has 2 daughters both of whom are accomplished gymnasts.",
+    "Address": "4600 N Virginia Rd.",
+    "StateID": 7
+}, {
+    "ID": 12,
+    "FirstName": "Kevin",
+    "LastName": "Carter",
+    "Prefix": "Mr.",
+    "Position": "Shipping Manager",
+    "Picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUVP5kZhAZlQjU3sttmDwG9kygpSamrmluYyWDXosUMd0vVMSJ",
+    "BirthDate": "1978/01/09",
+    "HireDate": "2009/08/11",
+    "Notes": "Kevin is our hard-working shipping manager and has been helping that department work like clockwork for 18 months.\r\n\r\nWhen not in the office, he is usually on the basketball court playing.",
     "Address": "424 N Main St.",
     "StateID": 8
 }];
