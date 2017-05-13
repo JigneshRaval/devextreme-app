@@ -11,6 +11,7 @@ import { Product, AuxNavItem, Service } from './header.service';
 export class HeaderComponent {
     products: Product[];
     auxNavItems: AuxNavItem[];
+    popupVisible = false;
 
     showSubmenuModes: any;
     showFirstSubmenuModes: any;
@@ -38,5 +39,9 @@ export class HeaderComponent {
         }
 
         
+    }
+
+    showInfo2() {
+        this.popupVisible = true;
     }
 }

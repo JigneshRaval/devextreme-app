@@ -33,3 +33,7 @@
 /deep/ .options .dx-checkbox {
     margin-bottom: 5px;
 }
+/deep/ .dx-tabpanel-container {
+    background-color: #FFF
+
+}

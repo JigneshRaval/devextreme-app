@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-body { font-size: 15px; }
+body { 
+    font-size: 15px;
+    background-color: #f2f4ff;
+    border: 0px solid;
+ }
 h1, h2 {
     margin-bottom: 1em;
     font-weight: 300;

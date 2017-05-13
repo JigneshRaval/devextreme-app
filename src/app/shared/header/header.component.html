@@ -1,3 +1,4 @@
+<!--
 <div class="aux-nav-bar">
   <div class="container">
     <div class="row">
@@ -15,3 +16,91 @@
     </div>
   </div>
 </div>
+-->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">UPOINT</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Role <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </div>
+          </form>
+        </li>
+        <li><a href="javascript:;" (click)="showInfo2()"><span class="glyphicon glyphicon-bell" aria-hidden="true"><span class="badge">4</span></span></a></li>
+        <li><a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
+        <li class="dropdown">
+          <a href="javascript:;" class="dropdown-toggle user-image" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:;">Your Profile</a></li>
+            <li><a href="javascript:;">Manage Communication</a></li>
+            <li><a href="javascript:;">Invester Relations</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="javascript:;">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<!-- Popup Window -->
+<dx-popup class="popup" [width]="'70%'" [height]="400" [showTitle]="true" title="Messages" [dragEnabled]="true" [closeOnOutsideClick]="false"
+  [(visible)]="popupVisible">
+  <div *dxTemplate="let data of 'content'">
+    <h4>You have 4 unread Messages</h4>
+    <div id="outputholder">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Atqui reperies, inquit, in hoc quidem pertinacem; Hoc loco
+        tenere se Triarius non potuit. Itaque in rebus minime obscuris non multus est apud eos disserendi labor. Ergo adhuc,
+        quantum equidem intellego, causa non videtur fuisse mutandi nominis. Quid est, quod ab ea absolvi et perfici debeat?
+        Contemnit enim disserendi elegantiam, confuse loquitur. Duo Reges: constructio interrete. </p>
+
+      <p>Maximas vero virtutes iacere omnis necesse est voluptate dominante. Falli igitur possumus. Quod, inquit, quamquam voluptatibus
+        quibusdam est saepe iucundius, tamen expetitur propter voluptatem. Nunc haec primum fortasse audientis servire debemus.
+        Ratio quidem vestra sic cogit. Videmus igitur ut conquiescere ne infantes quidem possint. Deinde dolorem quem maximum?
+        Vitiosum est enim in dividendo partem in genere numerare. Ut non sine causa ex iis memoriae ducta sit disciplina.
+        </p>
+
+      <p>Quamquam tu hanc copiosiorem etiam soles dicere. Indicant pueri, in quibus ut in speculis natura cernitur. Ipse Epicurus
+        fortasse redderet, ut Sextus Peducaeus, Sex. Hic nihil fuit, quod quaereremus. Non est igitur voluptas bonum. Gloriosa
+        ostentatio in constituendo summo bono. Possumusne ergo in vita summum bonum dicere, cum id ne in cena quidem posse
+        videamur? Nobis aliter videtur, recte secusne, postea; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
+        Ex rebus enim timiditas, non ex vocabulis nascitur. </p>
+
+    </div>
+  </div>
+</dx-popup>
+<!-- Popup Window -->

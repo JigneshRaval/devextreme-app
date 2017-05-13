@@ -11,3 +11,32 @@
 /deep/ .aux-nav-bar .dx-menu-item.dx-state-hover {
     color: #444;
 }
+/deep/ .navbar-default {
+    margin: 0;
+    background-color: #FFF;
+    border: 0px solid;
+        box-shadow : 0 5px 5px rgba(0,0,0,0.1);
+}
+.navbar-right > li {
+    border-left: 1px solid #CCC;
+}
+.navbar-right input {
+    border-radius: 0;
+    width: 32em;
+    margin-right: 1em;
+}
+.user-image {
+    height: 51px;
+    width: 50px;
+    background: url(../../../assets/images/character-faces-icons_1029-6.jpg) -9px -4px;
+}
+.navbar-right .glyphicon {
+    font-size: 24px;
+    line-height: 0;
+    vertical-align: middle;
+}
+.navbar-right .glyphicon .badge {
+    margin-top: -33px;
+    margin-left: -10px;
+    background-color: red;
+}

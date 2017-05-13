@@ -1,16 +1,9 @@
 <!-- Example 1 : Standard Bar -->
-<div style="border: 2px solid #CCC; padding: 2em;">
-<dx-chart
-    id="chart"
-    [dataSource]="dataSource">
-    <dxi-series
-        argumentField="day"
-        valueField="oranges"
-        name="My oranges"
-        type="bar"
-        color="#ffaa66">
+<div style="border: 2px solid #CCC; padding: 2em;background-color:#FFF;">
+  <dx-chart id="chart" [dataSource]="dataSource">
+    <dxi-series argumentField="day" valueField="oranges" name="My oranges" type="bar" color="#ffaa66">
     </dxi-series>
-</dx-chart>
+  </dx-chart>
 </div>
 
 <br/>
@@ -18,34 +11,22 @@
 <br/>
 
 <!-- Example 2 : Side-by-Side Bar -->
-<div style="border: 2px solid #CCC; padding: 2em;">
-<dx-chart
-    id="chart"
-    title="Gross State Product within the Great Lakes Region"
-    [dataSource]="grossProductData"
-    (onPointClick)="onPointClick($event)">
+<div style="border: 2px solid #CCC; padding: 2em;background-color:#FFF;">
+  <dx-chart id="chart" title="Gross State Product within the Great Lakes Region" [dataSource]="grossProductData" (onPointClick)="onPointClick($event)">
     <dxi-series valueField="year2004" name="2004"></dxi-series>
     <dxi-series valueField="year2001" name="2001"></dxi-series>
     <dxi-series valueField="year1998" name="1998"></dxi-series>
-    <dxo-common-series-settings
-        argumentField="state"
-        type="bar"
-        hoverMode="allArgumentPoints"
-        selectionMode="allArgumentPoints">
-        <dxo-label
-            [visible]="true"
-            [format]="{
+    <dxo-common-series-settings argumentField="state" type="bar" hoverMode="allArgumentPoints" selectionMode="allArgumentPoints">
+      <dxo-label [visible]="true" [format]="{
                 type: 'fixedPoint',
                 precision: '0'
             }">
-        </dxo-label>
+      </dxo-label>
     </dxo-common-series-settings>
-    <dxo-legend
-        verticalAlignment="bottom"
-        horizontalAlignment="center">
+    <dxo-legend verticalAlignment="bottom" horizontalAlignment="center">
     </dxo-legend>
     <dxo-export [enabled]="true"></dxo-export>
-</dx-chart>
+  </dx-chart>
 </div>
 
 <br/>
@@ -53,31 +34,15 @@
 <br/>
 
 <!-- Example 2 : Pie with Custom Labels -->
-<div style="border: 2px solid #CCC; padding: 2em;">
-    <dx-pie-chart
-    id="pie"
-    title="Olympic Medals in 2008"
-    palette="bright"
-    [dataSource]="olympicMedals">
-    <dxo-legend
-        orientation="horizontal"
-        itemTextPosition="right"
-        horizontalAlignment="right"
-        verticalAlignment="bottom"
-        [columnCount]="4"></dxo-legend>
+<div style="border: 2px solid #CCC; padding: 2em;background-color:#FFF;">
+  <dx-pie-chart id="pie" title="Olympic Medals in 2008" palette="bright" [dataSource]="olympicMedals">
+    <dxo-legend orientation="horizontal" itemTextPosition="right" horizontalAlignment="right" verticalAlignment="bottom" [columnCount]="4"></dxo-legend>
     <dxo-export [enabled]="true"></dxo-export>
-    <dxi-series
-        argumentField="country"
-        valueField="medals">
-        <dxo-label
-            [visible]="true"
-            position="columns"
-            [customizeText]="customizeLabel">
-            <dxo-font [size]="16"></dxo-font>
-            <dxo-connector
-                [visible]="true"
-                [width]="0.5"></dxo-connector>
-        </dxo-label>
+    <dxi-series argumentField="country" valueField="medals">
+      <dxo-label [visible]="true" position="columns" [customizeText]="customizeLabel">
+        <dxo-font [size]="16"></dxo-font>
+        <dxo-connector [visible]="true" [width]="0.5"></dxo-connector>
+      </dxo-label>
     </dxi-series>
-</dx-pie-chart>
+  </dx-pie-chart>
 </div>

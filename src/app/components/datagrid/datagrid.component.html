@@ -1,3 +1,4 @@
+<div style="border: 2px solid #CCC; padding: 2em;background-color:#FFF;">
 <dx-data-grid id="gridContainer" [dataSource]="dataSource" [allowColumnReordering]="true" (onEditingStart)="logEvent('EditingStart')"
   (onInitNewRow)="logEvent('InitNewRow')" (onRowInserting)="logEvent('RowInserting')" (onRowInserted)="logEvent('RowInserted')"
   (onRowUpdating)="logEvent('RowUpdating')" (onRowUpdated)="logEvent('RowUpdated')" (onRowRemoving)="logEvent('RowRemoving')"
@@ -23,4 +24,5 @@
   <dx-button id="clearLog" text="Clear" (onClick)="clearEvents()">
   </dx-button>
   <div>{{events}}</div>
+</div>
 </div>
