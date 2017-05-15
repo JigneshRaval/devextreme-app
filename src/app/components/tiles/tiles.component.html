@@ -7,7 +7,7 @@
                 <h3 class="card-title">{{employee.FirstName}} {{employee.LastName}}</h3>
                 <p class="card-text">{{employee.Notes}}</p>
                 <div class="text-center">
-                    <dx-button class="button-info" text="Details" (onClick)="showInfo(employee)"></dx-button>
+                    <dx-button class="button-info" [text]="applyButtonOptions.text" text="Details" (onClick)="applyButtonOptions.onClick(event, employee)"></dx-button>
                 </div>
             </div>
         </div>

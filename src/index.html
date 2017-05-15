@@ -9,10 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,800" rel="stylesheet" />
+
+  <!-- STYLESHEETS -->
   <link href="assets/css/bootstrap.css" rel="stylesheet" />
   <link href="assets/css/animate.css" rel="stylesheet" />
+  <link href="assets/css/dx.light.css" rel="stylesheet" title="dx.light.css" id="customStyle" />
+
+  <!-- SCRIPTS -->
   <script src="assets/js/jquery-3.1.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
@@ -23,6 +29,23 @@
 
 <body>
   <app-root>Loading...</app-root>
+
+  <script>
+    // Theme switcher
+    //=================================
+    $(document).ready(function () {
+      var styleEle = document.querySelector('#customStyle');
+      var themeSelector = document.querySelector('#switchTheme');
+
+      themeSelector.addEventListener('click', function (event) {
+        if (event.target && event.target.nodeName == 'A') {
+          var themeName = event.target.attributes['data-theme-name'].value;
+          $(document).find('head #customStyle').remove();
+          $(document).find('head').append('<link href="assets/css/' + themeName + '" rel="stylesheet" id="customStyle"/>')
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
