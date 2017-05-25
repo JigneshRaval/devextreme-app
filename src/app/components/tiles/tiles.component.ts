@@ -11,13 +11,13 @@ import notify from 'devextreme/ui/notify';
 })
 export class TileComponent {
     applyButtonOptions: { text: string; type: string; onClick: (e: any, employee: any) => void; };
-    currentEmployee = {};
+    currentEmployee = new Employee();
     employees: Employee[];
     popupVisible = false;
 
     constructor(service: Service) {
         this.employees = service.getEmployees();
-
+        
         this.applyButtonOptions = {
             text: "Apply",
             type: "success",
