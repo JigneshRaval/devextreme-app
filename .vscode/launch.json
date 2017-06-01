@@ -8,9 +8,9 @@
             "url": "http://localhost:4200",
             "sourceMaps": true,
             "trace": true,
-            "webRoot": "${workspaceRoot}/src/app",
+            "webRoot": "${workspaceRoot}",
             "sourceMapPathOverrides": {
-                "webpack:///C:*": "C:/*"
+                "webpack:///./src/*": "${workspaceRoot}/src/*"
             }
         },
         {
